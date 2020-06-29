@@ -28,7 +28,7 @@ pipeline
                 echo "sonar"
                 withSonarQubeEnv("local sonar") 
 				{
-					bat "mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar"
+					bat "mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.7:sonar"
 				}
             }
         }
