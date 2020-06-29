@@ -11,7 +11,7 @@ pipeline
         stage('Checkout'){
             steps{
                 echo "checkout"
-                git branch:"master", url:"https://github.com/AnamikaSaluja/devOpsAssignment"
+                git branch:"master", url:"https://github.com/AnamikaSaluja/anamika_assignment"
 				//checkout scm
             }
         }
