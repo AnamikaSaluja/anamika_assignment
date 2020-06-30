@@ -66,7 +66,7 @@ pipeline
 		{
 			steps
 			{
-				bat 'docker run -d --name anamikaAssignmentContainer -p 9004:8080 anamika:1'
+				bat 'docker run -d --name anamikaAssignmentContainer -p 9004:8080 anamika:3'
 			}
 		}
         
