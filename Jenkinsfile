@@ -58,7 +58,7 @@ pipeline
 		{
 			steps
 			{
-				bat 'docker build -t anamika_assignment:1 .'
+				bat 'docker build -t anamika:3 .'
 			}
 		}
 	    
@@ -66,7 +66,7 @@ pipeline
 		{
 			steps
 			{
-				bat 'docker run -d --name anamikaAssignmentContainer -p 9004:8080 anamika_assignment:1'
+				bat 'docker run -d --name anamikaAssignmentContainer -p 9004:8080 anamika:1'
 			}
 		}
         
