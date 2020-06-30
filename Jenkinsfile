@@ -53,6 +53,14 @@ pipeline
                 )
 			}
 		}
+	    
+	    stage('Build image')
+		{
+			steps
+			{
+				bat 'docker build -t anamika_assignment:1 .'
+			}
+		}
         
     }
 }
