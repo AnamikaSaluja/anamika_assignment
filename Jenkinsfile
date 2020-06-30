@@ -61,6 +61,14 @@ pipeline
 				bat 'docker build -t anamika_assignment:1 .'
 			}
 		}
+	    
+	     stage('Deployment')
+		{
+			steps
+			{
+				bat 'docker run -d --name anamikaAssignmentContainer -p 9004:8080 anamika_assignment:1'
+			}
+		}
         
     }
 }
